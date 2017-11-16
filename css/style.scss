@@ -15,3 +15,23 @@ body {
     min-height: 3000px;
   }
 }
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: red;
+  opacity: 0.3;
+}
+
+@include media($tablet) {
+  .container {
+    width: 640px;
+  }
+}
+
+  @include media($desctop) {
+    .container {
+      width: 960px;
+    }
+  }
