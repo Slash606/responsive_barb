@@ -14,15 +14,15 @@ img {
   height: auto; }
 
 body {
-  background: #000 url("../img/barbershop-index-mobile.jpg") no-repeat center top;
+  background: #292929 url("../img/barbershop-index-mobile.jpg") no-repeat center top;
   min-height: 5000px; }
   @media screen and (min-width: 760px) {
     body {
-      background: #000 url("../img/barbershop-index-tablet.jpg") no-repeat center top;
+      background: #292929 url("../img/barbershop-index-tablet.jpg") no-repeat center top;
       min-height: 3000px; } }
   @media screen and (min-width: 1200px) {
     body {
-      background: #000 url("../img/barbershop-index-desktop.jpg") no-repeat center top;
+      background: #292929 url("../img/barbershop-index-desktop.jpg") no-repeat center top;
       min-height: 3000px; } }
 
 .container {

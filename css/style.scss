@@ -3,15 +3,15 @@
 @import "mixins";
 
 body {
-  background: #000 url("../img/barbershop-index-mobile.jpg") no-repeat center top;
+  background: $bg-darkgrey url("../img/barbershop-index-mobile.jpg") no-repeat center top;
   min-height: 5000px;
 
   @include media($tablet) {
-    background: #000 url("../img/barbershop-index-tablet.jpg") no-repeat center top;
+    background: $bg-darkgrey url("../img/barbershop-index-tablet.jpg") no-repeat center top;
     min-height: 3000px;
   }
   @include media($desctop) {
-    background: #000 url("../img/barbershop-index-desktop.jpg") no-repeat center top;
+    background: $bg-darkgrey url("../img/barbershop-index-desktop.jpg") no-repeat center top;
     min-height: 3000px;
   }
 }
