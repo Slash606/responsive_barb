@@ -1,42 +1,85 @@
+html {
+  font-size: 10px; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-size: 18px;
   line-height: 27px;
-  font-family: Arial, sans-serif;
   color: #f7f4f1;
   font-style: normal;
-  background-color: #292929; }
+  background-color: #292929;
+  font-family: "PT Sans Narrow", sans-serif; }
 
 img {
   max-width: 100%;
   height: auto; }
 
-body {
-  background: #292929 url("../img/barbershop-index-mobile.jpg") no-repeat center top;
-  min-height: 5000px; }
-  @media screen and (min-width: 760px) {
-    body {
-      background: #292929 url("../img/barbershop-index-tablet.jpg") no-repeat center top;
-      min-height: 3000px; } }
-  @media screen and (min-width: 1200px) {
-    body {
-      background: #292929 url("../img/barbershop-index-desktop.jpg") no-repeat center top;
-      min-height: 3000px; } }
+ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
 
+@font-face {
+  src: url("../fonts/PT_Sans-Narrow-Web-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  src: url("../fonts/PT_Sans-Narrow-Web-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+/*body {
+  background: $bg-darkgrey url("../img/barbershop-index-desktop.jpg") no-repeat center top;
+  min-height: 5000px;
+
+  @include media($tablet) {
+    background: $bg-darkgrey url("../img/barbershop-index-tablet.jpg") no-repeat center top;
+    min-height: 3000px;
+  }
+  @include media($mobile) {
+    background: $bg-darkgrey url("../img/barbershop-index-mobile.jpg") no-repeat center top;
+    min-height: 3000px;
+  }
+}*/
 .container {
-  width: 320px;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: 500px;
   background-color: red;
   opacity: 0.3; }
 
-@media screen and (min-width: 760px) {
+@media screen and (max-width: 1200px) {
   .container {
-    width: 640px; } }
-@media screen and (min-width: 1200px) {
+    width: 85%; } }
+@media screen and (max-width: 760px) {
   .container {
-    width: 960px; } }
+    width: 100%; } }
+.mainNav {
+  display: flex;
+  justify-content: space-between; }
+  .mainNav a {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 70px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; }
+  @media screen and (max-width: 760px) {
+    .mainNav {
+      flex-direction: column; } }
+
+.mainNav__list {
+  display: flex;
+  justify-content: space-around;
+  width: 78%;
+  list-style: none; }
+  @media screen and (max-width: 760px) {
+    .mainNav__list {
+      flex-direction: column; } }
+
+.mainNav__login {
+  padding: 0 40px; }
 
 /*# sourceMappingURL=style.css.map */
