@@ -45,9 +45,9 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 500px;
-  background-color: red;
-  opacity: 0.3; }
+  /*  min-height: 500px;
+    background-color: red;
+    opacity: 0.3;*/ }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -56,9 +56,12 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   .container {
     width: 100%; } }
 .mainNav {
+  background-color: #000; }
+
+.mainNav .container {
   display: flex;
   justify-content: space-between; }
-  .mainNav a {
+  .mainNav .container a {
     display: block;
     font-size: 18px;
     font-weight: 700;
@@ -66,9 +69,17 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase; }
+    @media screen and (max-width: 760px) {
+      .mainNav .container a {
+        padding-left: 20px;
+        border-bottom: 2px solid #6a4d38;
+        width: 100%; }
+        .mainNav .container a:hover {
+          background-color: #6a4d38; } }
   @media screen and (max-width: 760px) {
-    .mainNav {
-      flex-direction: column; } }
+    .mainNav .container {
+      flex-direction: column;
+      background-color: #826550; } }
 
 .mainNav__list {
   display: flex;
@@ -77,9 +88,20 @@ ul, li, p, h1, h2, h3, h4, h5, h6 {
   list-style: none; }
   @media screen and (max-width: 760px) {
     .mainNav__list {
-      flex-direction: column; } }
+      flex-direction: column;
+      width: 100%; } }
 
 .mainNav__login {
   padding: 0 40px; }
+  @media screen and (max-width: 760px) {
+    .mainNav__login {
+      padding-left: 0;
+      background-color: #6a4d38; }
+      .mainNav__login a:hover {
+        background-color: #826550; } }
+
+.pageLogo {
+  min-height: 650px;
+  background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

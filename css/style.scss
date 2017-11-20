@@ -22,9 +22,9 @@
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 500px;
+/*  min-height: 500px;
   background-color: red;
-  opacity: 0.3;
+  opacity: 0.3;*/
 }
 
 @include media($tablet) {
@@ -39,10 +39,14 @@
     }
   }
 
-.mainNav {
+  .mainNav {
+    background-color: #000;
+  }
+
+.mainNav .container{
   display: flex;
   justify-content: space-between;
-
+  
   & a{
     display: block;
     font-size: 18px;
@@ -51,10 +55,22 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+
+    @include media($mobile) {
+      padding-left: 20px;
+      border-bottom: 2px solid $darkBrown;
+      width: 100%;
+
+      &:hover {
+        background-color: $darkBrown;
+      }
+    }
   }
 
   @include media($mobile) {
     flex-direction: column;
+    background-color: $brown;
+
   }
 
 }
@@ -67,11 +83,27 @@
 
   @include media($mobile) {
     flex-direction: column;
+    width: 100%;
   }
 }
 
 .mainNav__login {
   padding: 0 40px;
+  @include media($mobile) {
+    padding-left: 0;
+    background-color: $darkBrown;
+
+    & a:hover {
+      background-color: $brown;
+    }
+  }
 }
+
+.pageLogo {
+  min-height: 650px;
+  background-color: #fff;
+}
+
+
 
 
